@@ -12,8 +12,7 @@ nodePod { label ->
 
     container('docker') {
       stage('Prepare Build') {
-        sh 'ls -al scripts'
-        sh 'scripts/prepare.sh'
+        sh './scripts/prepare.sh'
       }
 
       stage('Build') {
