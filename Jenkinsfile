@@ -6,15 +6,14 @@ nodePod { label ->
       npmLogin()
 
       stage('NPM Install') {
-        sh '''
-        npm install
-        '''
+        sh 'npm install'
       }
     }
 
     container('docker') {
       stage('Prepare Build') {
-        sh './scripts/prepare.sh'
+        sh 'ls -al scripts'
+        sh 'scripts/prepare.sh'
       }
 
       stage('Build') {
