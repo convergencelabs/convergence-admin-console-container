@@ -1,5 +1,5 @@
 nodePod { label ->
-  def containerName = "admin-console"
+  def containerName = "convergence-admin-console"
 
   runInNode(label) {
     container('node') {

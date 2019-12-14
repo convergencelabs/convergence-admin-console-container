@@ -7,4 +7,4 @@ npm install
 ./prepare.sh
 
 # Run the docker build
-docker build -t convergencelabs/admin-console build
+docker build -t convergencelabs/convergence-admin-console build
