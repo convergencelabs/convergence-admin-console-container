@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 
-# Prepare Directories
-mkdir -p build
+# Download the admin console
+npm install
 
-# Copy the source files
-cp -a src/* build
-
-# Download the Convergence Admin Console
-npm i
-cp -a "node_modules/@convergence/admin-console/www" build
+# Prepare the files.
+./prepare.sh
 
 # Run the docker build
 docker build -t convergencelabs/admin-console build
