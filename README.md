@@ -1,3 +1,7 @@
+<div align="center">
+  <img  alt="Convergence Logo" height="80" src="https://convergence.io/assets/img/convergence-logo.png" >
+</div>
+
 # Convergence Admin Console Docker Container
 This repository builds the official Docker Container for the [Convergence Admin Console](https://github.com/convergencelabs/convergence-admin-console). The project obtains the Convergence Admin Console distribution using npm.  To change the version of the Convergence Admin Console edit the [src/package.json](src/package.json) file.
 
