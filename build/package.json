@@ -1,6 +1,0 @@
-{
-  "private": true,
-  "dependencies": {
-    "@convergence/admin-console": "~1.0.0-SNAPSHOT"
-  }
-}

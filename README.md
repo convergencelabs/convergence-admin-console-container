@@ -20,8 +20,8 @@ An example docker run might look like this:
 docker run --rm \
   --publish 8000:80 \
   --env CONVERGENCE_CONSOLE_BASE_URL=/ \
-  --env CONVERGENCE_SERVER_REST_API=http://localhost:8080/ \
-  --env CONVERGENCE_SERVER_REALTIME_API=https://localhost:8081/ \
+  --env CONVERGENCE_SERVER_REST_API=http://localhost:8081/ \
+  --env CONVERGENCE_SERVER_REALTIME_API=https://localhost:8080/ \
   convergencelabs/convergence-admin-console
 ```
 
