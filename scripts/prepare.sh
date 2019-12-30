@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 
+set -e
+
 mkdir -p build
 cp -a src/* build
-cp -a "node_modules/@convergence/admin-console/www" build
+
+cd build
+
+# Download the admin console
+npm install

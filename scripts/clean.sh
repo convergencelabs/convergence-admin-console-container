@@ -1,3 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-rm -rf build node_modules package-lock.json
+set -e
+
+rm -rf build

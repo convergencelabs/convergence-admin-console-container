@@ -7,7 +7,7 @@ RUN wget https://github.com/kelseyhightower/confd/releases/download/v0.16.0/conf
 ADD confd /etc/confd/
 
 # nginx
-COPY www /usr/share/nginx/html
+COPY node_modules/@convergence/admin-console/build /usr/share/nginx/html
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # boot script

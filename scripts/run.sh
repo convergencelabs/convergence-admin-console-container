@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# Set Configs
+PORT=4002
+
+CONVERGENCE_CONSOLE_BASE_URL="/"
+CONVERGENCE_SERVER_REST_API="http://localhost:8080/"
+CONVERGENCE_SERVER_REALTIME_API="http://localhost:8081/"
+
+
+# Run the docker build
+docker run --rm \
+  --publish $PORT:80 \
+  --env CONVERGENCE_CONSOLE_BASE_URL=$CONVERGENCE_CONSOLE_BASE_URL \
+  --env CONVERGENCE_SERVER_REST_API=$CONVERGENCE_SERVER_REST_API \
+  --env CONVERGENCE_SERVER_REALTIME_API=CONVERGENCE_SERVER_REALTIME_API \
+  convergencelabs/convergence-admin-console

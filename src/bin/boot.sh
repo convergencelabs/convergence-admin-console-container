@@ -14,9 +14,9 @@ echo "Convergence Admin Console"
 echo "Checking required environment variables..."
 echo ""
 
-require_env_var $CONVERGENCE_CONSOLE_BASE_URL "CONVERGENCE_CONSOLE_BASE_URL"
-require_env_var $CONVERGENCE_SERVER_REST_API "CONVERGENCE_SERVER_REST_API"
-require_env_var $CONVERGENCE_SERVER_REALTIME_API "CONVERGENCE_SERVER_REALTIME_API"
+require_env_var "$CONVERGENCE_CONSOLE_BASE_URL" "CONVERGENCE_CONSOLE_BASE_URL"
+require_env_var "$CONVERGENCE_SERVER_REST_API" "CONVERGENCE_SERVER_REST_API"
+require_env_var "$CONVERGENCE_SERVER_REALTIME_API" "CONVERGENCE_SERVER_REALTIME_API"
 
 echo ""
 echo "All required environment variables are set.  Processing config file."

@@ -1,10 +1,9 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-# Download the admin console
-npm install
+set -e
 
 # Prepare the files.
-./prepare.sh
+$(dirname "$0")/prepare.sh
 
 # Run the docker build
 docker build -t convergencelabs/convergence-admin-console build
