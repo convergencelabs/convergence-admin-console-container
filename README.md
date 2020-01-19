@@ -12,9 +12,9 @@ The container is based off of the [nginx apline continer](https://hub.docker.com
 # Running
 The container requires three environment variables to be set to run properly:
 
-- `CONVERGENCE_CONSOLE_BASE_URL`: The context url that the Convergence Admin Console will be served from.  For example, if the url will be `https://www.example.com/console/`, then this environment variable should be set to "console/". 
-- `CONVERGENCE_SERVER_REST_API`: The url to the Convergence Server REST API. 
-- `CONVERGENCE_SERVER_REALTIME_API`: The url to the Convergence Server Realtime API.
+- **`CONVERGENCE_CONSOLE_BASE_URL`**: The context url that the Convergence Admin Console will be served from.  For example, if the url will be `https://www.example.com/console/`, then this environment variable should be set to "console/". 
+- **`CONVERGENCE_SERVER_REST_API`**: The url to the Convergence Server REST API. 
+- **`CONVERGENCE_SERVER_REALTIME_API`**: The url to the Convergence Server Realtime API.
 
 An example docker run might look like this:
 
