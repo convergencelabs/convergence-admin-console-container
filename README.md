@@ -3,6 +3,8 @@
 </div>
 
 # Convergence Admin Console Docker Container
+[![Build Status](https://travis-ci.org/convergencelabs/convergence-admin-console-container.svg?branch=master)](https://travis-ci.org/convergencelabs/convergence-admin-console-container)
+
 This repository builds the official Docker Container for the [Convergence Admin Console](https://github.com/convergencelabs/convergence-admin-console). The project obtains the Convergence Admin Console distribution using npm.  To change the version of the Convergence Admin Console edit the [src/package.json](src/package.json) file.
 
 The container is based off of the [nginx apline continer](https://hub.docker.com/_/nginx). The container uses [confd](https://github.com/kelseyhightower/confd) to write the javascript configuration file based on environment variables passed to the container.

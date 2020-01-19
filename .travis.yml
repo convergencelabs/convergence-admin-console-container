@@ -1,0 +1,10 @@
+language: javascript
+
+env:
+  - DOCKER_REPO=convergencelabs/convergence-admin-console
+
+services:
+  - docker
+
+script:
+ - docker build -t $DOCKER_REPO src
