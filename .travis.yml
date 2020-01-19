@@ -8,4 +8,4 @@ services:
 
 script:
  - scripts/prepare.sh
- - docker build -t $DOCKER_REPO src
+ - docker build -t $DOCKER_REPO build
