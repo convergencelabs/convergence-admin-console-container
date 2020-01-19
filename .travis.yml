@@ -7,4 +7,5 @@ services:
   - docker
 
 script:
+ - scripts/prepare.sh
  - docker build -t $DOCKER_REPO src
