@@ -3,7 +3,7 @@
 </div>
 
 # Convergence Admin Console Container
-[![Build Status](https://travis-ci.org/convergencelabs/convergence-admin-console-container.svg?branch=master)](https://travis-ci.org/convergencelabs/convergence-admin-console-container)
+[![Build](https://github.com/convergencelabs/convergence-admin-console-container/actions/workflows/build.yml/badge.svg)](https://github.com/convergencelabs/convergence-admin-console-container/actions/workflows/build.yml)
 
 This repository builds the official [OCI](https://www.opencontainers.org/) Container for the [Convergence Admin Console](https://github.com/convergencelabs/convergence-admin-console). The project obtains the Convergence Admin Console distribution using npm.  To change the version of the Convergence Admin Console edit the [src/package.json](src/package.json) file.
 
@@ -48,11 +48,6 @@ docker tag convergencelabs/convergence-admin-console myrepo.example.org/converge
 docker push myrepo.example.org/convergence-admin-console
 ```
 
-To clean up the build use the following command:
-
-```shell script
-scripts/clean.sh
-``` 
 
 
 ## Support
